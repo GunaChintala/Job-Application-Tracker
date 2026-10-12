@@ -18,40 +18,7 @@ function App() {
 
     const [applications, setApplications] =
         useLocalStorage("applications", [
-            {
-                id: 1,
-                company: "TCS",
-                position: "Java Developer",
-                location: "Hyderabad",
-                status: "Applied",
-                appliedDate: "2026-10-02",
-                updatedAt: "2026-10-02T10:00:00",
-                statusHistory: [
-                    {
-                        status: "Applied",
-                        changedAt: "2026-10-02T10:00:00"
-                    }
-                ]
-            },
-            {
-                id: 2,
-                company: "IBM",
-                position: "Software Engineer",
-                location: "Bangalore",
-                status: "Interview",
-                appliedDate: "2026-09-28",
-                updatedAt: "2026-09-28T10:00:00",
-                statusHistory: [
-                    {
-                        status: "Applied",
-                        changedAt: "2026-09-28T10:00:00"
-                    },
-                    {
-                        status: "Interview",
-                        changedAt: "2026-09-28T10:00:00"
-                    }
-                ]
-            }
+            
         ])
 
     const [editingApplication, setEditingApplication] =
